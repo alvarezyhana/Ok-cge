@@ -125,12 +125,12 @@
       box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2), 0 2px 4px -1px rgba(37, 99, 235, 0.1);
     }
     .dark .user-message { 
-      background-color: #3b82f6; 
+      background-color: green; 
       box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3), 0 2px 4px -1px rgba(59, 130, 246, 0.2);
     }
     .bot-message { 
       background-color: #f3f4f6; 
-      color: #1f2937; 
+      color: blue; 
       border-radius: 18px 18px 18px 4px; 
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     }
@@ -1057,7 +1057,7 @@
           chatArea.setAttribute("aria-label", "Chat messages");
 
           if (history.length === 0) {
-            addMessage("👋 Welcome to Wataru Chat! How can I assist you today?");
+            addMessage("👋Hey User my name is Mega Gpt Chat! How can I assist you today?");
           } else {
             history.forEach((message) => addMessage(message.content, message.isUser, false));
           }
@@ -1066,7 +1066,7 @@
           chatArea.innerHTML = "";
           chatArea.setAttribute("role", "list");
           chatArea.setAttribute("aria-label", "Chat messages");
-          addMessage("👋 Welcome to Wataru Chat! How can I assist you today?");
+          addMessage("👋Hey User my name is Mega gpt Chat! How can I assist you today?");
         }
       };
 
@@ -1104,7 +1104,7 @@
           if (error.message === "You are currently offline")
             addMessage("⚠️ You're offline. Please check your internet connection and try again.");
           else if (error.response && error.response.status === 401) {
-            addMessage("⚠️ Your session has expired. Please log in again.");
+            addMessage("❌ Your session has expired. Please log in again.");
             setTimeout(() => {
               localStorage.removeItem("userSession");
               location.reload();
