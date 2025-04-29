@@ -1,12 +1,12 @@
 const axios = require("axios");
 
 exports.meta = {
-  name: "waifu",
+  name: "meta",
   version: "1.2.1",
   description: "Sends a random anime character image",
   category: "fun",
   prefix: "both",
-  guide: "Type /waifu to get a random anime character image",
+  guide: "Type -meta to get a random anime character image",
 };
 
 exports.onStart = async ({ wataru }) => {
