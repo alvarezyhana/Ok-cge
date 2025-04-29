@@ -1,5 +1,5 @@
 exports.meta = {
-    name: "help",
+    name: "menu",
     version: "1.0.0",
     description: "Displays a list of available commands with pagination.",
     category: "general",
