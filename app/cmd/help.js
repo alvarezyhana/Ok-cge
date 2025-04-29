@@ -31,14 +31,14 @@ exports.onStart = async function({ wataru, msg, args }) {
     const commandsToShow = commandsList.slice(startIndex, endIndex);
 
     // Build the help message for the current page
-    let helpMessage = `Here are the available commands (Page ${page}/${totalPages}):\n\n`;
+    let helpMessage = `Mega available commands (Page ${page}/${totalPages}):\n\n`;
 
     commandsToShow.forEach(command => {
         const { name, version, description, category, prefix } = command.meta;
         helpMessage += `**${globalPrefix}${name}** (v${version}) - ${description}\n`;
         helpMessage += `Category: ${category}\n`;
         helpMessage += `Prefix: ${prefix}\n`;
-        helpMessage += "-----------------------\n";
+        helpMessage += "-----------------------👑Support Owner: Alvarez Yhana\n";
     });
 
     // Include navigation info for previous/next pages
